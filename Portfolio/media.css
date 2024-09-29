@@ -1,0 +1,285 @@
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(8, 33, 21);
+    z-index: 1;
+    text-align: center;
+}
+
+nav ul.mobile-menu li {
+    margin: 20px 0;
+}
+
+nav ul.mobile-menu li a {
+    font-size: 1.3rem;
+}
+
+nav.active .mobile-menu {
+    display: flex;
+}
+
+
+@media (max-width: 1024px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftSection {
+        font-size: 2.5rem;
+        margin: 50px;
+    }
+
+    .rightSection img {
+        width: 60%;
+    }
+
+    .secondSection {
+        padding: 30px;
+        margin-top: -60px;
+    }
+
+    #aboutMe p {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .leftSection {
+        font-size: 2rem;
+        margin: 20px;
+    }
+
+    .rightSection img {
+        width: 100%;
+    }
+
+    .secondSection {
+        padding: 20px;
+        margin-top: -30px;
+    }
+
+    #aboutMe p {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    #others ul {
+        margin-left: 50px;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .leftSection {
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+
+    .rightSection img {
+        width: 90%;
+    }
+
+    #aboutMe p {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    table td {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .footer-col h4 {
+        font-size: 1.2rem;
+    }
+
+    .footer-col ul li {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+@media (max-width: 797px) {
+    nav ul {
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .leftSection {
+        font-size: 1.8rem;
+        margin: 20px;
+    }
+
+    .rightSection img {
+        width: 90%;
+        margin: 30px 0;
+    }
+
+    .secondSection {
+        padding: 20px;
+        margin-top: -30px;
+    }
+
+    #aboutMe p {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 10px;
+        margin-left: 0;
+    }
+
+    table td {
+        font-size: 14px;
+        padding: 5px;
+        background-color: rgb(62, 25, 8);
+    }
+
+    .skills, .course {
+        margin: 20px;
+        font-size: 1.3rem;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .firstSection {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .leftSection {
+        font-size: 2rem;
+        margin: 20px;
+    }
+
+    .rightSection img {
+        width: 100%;
+    }
+
+    .secondSection {
+        padding: 20px;
+        margin-top: -30px;
+    }
+
+    #aboutMe p {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    #others ul {
+        margin-left: 50px;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .leftSection {
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+
+    .rightSection img {
+        width: 90%;
+    }
+
+    #aboutMe p {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    table td {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .footer-col h4 {
+        font-size: 1.2rem;
+    }
+
+    .footer-col ul li {
+        font-size: 0.9rem;
+    }
+}
